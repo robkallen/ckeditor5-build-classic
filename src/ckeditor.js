@@ -1,5 +1,5 @@
 /**
- * @license Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
@@ -20,6 +20,7 @@ import LinkPlugin from '@ckeditor/ckeditor5-link/src/link';
 import ListPlugin from '@ckeditor/ckeditor5-list/src/list';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import ImageuploadPlugin from '@ckeditor/ckeditor5-upload/src/imageupload';
+import UnderlinePlugin from '@ckeditor/ckeditor5-basic-styles/src/underline';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -40,7 +41,8 @@ ClassicEditor.build = {
 		LinkPlugin,
 		ListPlugin,
 		ParagraphPlugin,
-		ImageuploadPlugin
+		ImageuploadPlugin,
+		UnderlinePlugin
 	],
 	config: {
 		toolbar: {
@@ -48,6 +50,7 @@ ClassicEditor.build = {
 				'headings',
 				'bold',
 				'italic',
+				'underline',
 				'link',
 				'bulletedList',
 				'numberedList',
